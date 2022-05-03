@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap');
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+.heroimg{
+    width: 100%;
+}
+.herocontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    gap: 1.5em;
+    
+}
+.hero-heading{
+    
+    font-size: 2.2em;
+    font-weight: 700;
+    
+}
+.hero-brief{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    color: rgb(105, 105, 105);
+    padding: 1px 5px;
+}
+.learnmorebtn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 15px;
+    font-size: 1em;
+    width: fit-content;
+    font-weight: 700;
+}
+.brandlist>img{
+    width: 21%;
+}
+.audiophile{
+    max-width: 15%;
+}
+.brandlist{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
