@@ -1,24 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap');
-*{
-    padding: 0;margin: 0;box-sizing: border-box;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
     margin-bottom: 10px;
 }
 
-.container{
+.sidemenu {
+    width: min(220px, 60%);
+    background-color: beige;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     display: flex;
+
     flex-direction: column;
+    
+}
+
+.featurelist {
+    margin-top: 1em;
+    margin-left: 1em;
+    /* display: none; */
+}
+
+.feature {
+    display: flex;
+
+    gap: 1em;
+    padding: 8px;
+    font-weight: 500;
+    color: rgb(105, 105, 105);
 
 }
-.heroimg{
+
+.companylist {
+    margin-left: 1em;
+    margin-top: 1em;
+    /* display: none; */
+}
+
+.companylist>li {
+    display: flex;
+    padding: 8px;
+    font-weight: 500;
+    color: rgb(105, 105, 105);
+
+}
+
+.cross {
+    width: 100%;
+    text-align: right;
+    padding: 18px 15px;
+}
+
+.sidefeatures,
+.sidecompany,
+.sidecareers,
+.sideabout {
+    width: 100%;
+    padding: 15px 15px;
+
+
+}
+
+.sidefeatures>h1,
+.sidecompany>h1,
+.sidecareers>h1,
+.sideabout>h1 {
+    font-size: 1.1em;
+    display: inline;
+    color: rgb(105, 105, 105);
+}
+
+.sidebuttons {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+
+}
+
+.sidelogin,
+.sideregister {
+    padding: 0.5em;
+    font-size: 0.9em;
+    background: none;
+
+    font-weight: 700;
+    color: rgb(105, 105, 105);
+}
+
+.sidelogin {
+    border: none;
+}
+
+.sideregister {
+    width: 80%;
+    padding: 0.8em;
+    border-radius: 20px;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+
+}
+
+.heroimg {
     width: 100%;
 }
-.herocontent{
+
+.herocontent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,22 +131,25 @@
     margin-top: 2em;
     margin-bottom: 2em;
     gap: 1.5em;
-    
+
 }
-.hero-heading{
-    
+
+.hero-heading {
+
     font-size: 2.2em;
     font-weight: 700;
-    
+
 }
-.hero-brief{
+
+.hero-brief {
     font-size: 17px;
     font-weight: 500;
     line-height: 25px;
     color: rgb(105, 105, 105);
     padding: 1px 5px;
 }
-.learnmorebtn{
+
+.learnmorebtn {
     background-color: black;
     color: white;
     border: none;
@@ -51,15 +159,23 @@
     width: fit-content;
     font-weight: 700;
 }
-.brandlist>img{
+
+.brandlist>img {
     width: 21%;
 }
-.audiophile{
+
+.audiophile {
     max-width: 15%;
 }
-.brandlist{
+
+.brandlist {
+
     padding: 10px 10px;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
+    /* display: none; */
+}
+.hide{
+    display: none;
 }
