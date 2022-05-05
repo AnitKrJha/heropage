@@ -15,7 +15,7 @@
 }
 
 .sidemenu {
-    width: min(220px, 60%);
+    width: min(350px, 60%);
     background-color: beige;
     height: 100vh;
     position: absolute;
@@ -28,8 +28,10 @@
 }
 
 .featurelist {
+    width: 80%;
     margin-top: 1em;
     margin-left: 1em;
+    padding-left: 10%;
     /* display: none; */
 }
 
@@ -46,6 +48,7 @@
 .companylist {
     margin-left: 1em;
     margin-top: 1em;
+    padding-left: 10%;
     /* display: none; */
 }
 
@@ -73,10 +76,10 @@
 
 }
 
-.sidefeatures>h1,
-.sidecompany>h1,
-.sidecareers>h1,
-.sideabout>h1 {
+.sidefeatures h1,
+.sidecompany h1,
+.sidecareers h1,
+.sideabout h1 {
     font-size: 1.1em;
     display: inline;
     color: rgb(105, 105, 105);
@@ -94,9 +97,9 @@
 .sidelogin,
 .sideregister {
     padding: 0.5em;
-    font-size: 0.9em;
+    font-size: 1em;
     background: none;
-
+    border:2px solid rgb(105, 105, 105);
     font-weight: 700;
     color: rgb(105, 105, 105);
 }
@@ -152,7 +155,7 @@
 .learnmorebtn {
     background-color: black;
     color: white;
-    border: none;
+    border: solid  2px black;
     padding: 13px 25px;
     border-radius: 15px;
     font-size: 1em;
@@ -175,6 +178,11 @@
     justify-content: space-between;
     align-items: center;
     /* display: none; */
+}
+.learnmorebtn:hover{
+    background-color: white;
+    color:black;
+    transition: background-color 0.2s ease-out;
 }
 .hide{
     display: none;
