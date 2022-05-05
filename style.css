@@ -36,6 +36,7 @@
 .companyheading,
 .sidecareers,
 .sideabout {
+    -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
 
