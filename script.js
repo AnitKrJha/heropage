@@ -8,9 +8,14 @@ const companyheading = document.querySelector('.companyheading');
 
 var companyup = false;
 var featureup = false;
+
 menu.addEventListener('click', (e) => {
     sidemenu.classList.toggle('hide');
-})
+    sidemenu.style.boxShadow='0 0 0 10000px rgba(0,0,0,0.75)';
+    window.addEventListener('click',(e)=>{
+        console.log(e);
+    })
+});
 console.dir(companyheading);
 featureheading.addEventListener('click', (e) => {
     featureList.classList.toggle('hide');
@@ -30,5 +35,16 @@ companyheading.addEventListener('click', (e) => {
 });
 closesidemenu.addEventListener('click', (e) => {
     sidemenu.classList.toggle('hide');
-})
+    featureList.classList.add('hide');
+    featureheading.lastElementChild.src = "./images/icon-arrow-down.svg";
+
+    companyheading.lastElementChild.src = "./images/icon-arrow-down.svg";
+    companyup = false;
+    featureup = false;
+    companyList.classList.add('hide');
+    
+});
+
+
+
 console.dir(featureheading)

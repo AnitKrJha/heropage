@@ -14,9 +14,34 @@
     margin-bottom: 10px;
 }
 
+.featureheading,
+.companyheading {
+    display: inline;
+}
+
+.featureheading :hover,
+.companyheading :hover,
+.sidecareers :hover,
+.sideabout :hover {
+
+    color: black;
+    transition: color 0.3s ease-out;
+}
+
+.menu,
+.close,
+.sidelogin,
+.sideregister,
+.featureheading,
+.companyheading,
+.sidecareers,
+.sideabout {
+    cursor: pointer;
+}
+
 .sidemenu {
     width: min(350px, 60%);
-    background-color: beige;
+    background-color: white;
     height: 100vh;
     position: absolute;
     top: 0px;
@@ -24,7 +49,7 @@
     display: flex;
 
     flex-direction: column;
-    
+
 }
 
 .featurelist {
@@ -99,7 +124,7 @@
     padding: 0.5em;
     font-size: 1em;
     background: none;
-    border:2px solid rgb(105, 105, 105);
+    border: 2px solid rgb(105, 105, 105);
     font-weight: 700;
     color: rgb(105, 105, 105);
 }
@@ -155,7 +180,7 @@
 .learnmorebtn {
     background-color: black;
     color: white;
-    border: solid  2px black;
+    border: solid 2px black;
     padding: 13px 25px;
     border-radius: 15px;
     font-size: 1em;
@@ -179,11 +204,14 @@
     align-items: center;
     /* display: none; */
 }
-.learnmorebtn:hover{
+
+.learnmorebtn:hover {
     background-color: white;
-    color:black;
+    color: black;
     transition: background-color 0.2s ease-out;
+    cursor: pointer;
 }
-.hide{
-    display: none;
+
+.hide {
+    display: none !important;
 }
