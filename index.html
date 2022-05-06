@@ -6,15 +6,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mediaquery.css">
   <title>HeroPage</title>
 </head>
 
 <body>
   <header>
     <nav class="nav">
-      <img src="./images/logo.svg" alt="brand logo" class="logo">
-      <img src="./images/icon-menu.svg" alt="menu" class="menu">
-      
+
+      <div class="navleft">
+        <img src="./images/logo.svg" alt="brand logo" class="logo">
+        <img src="./images/icon-menu.svg" alt="menu" class="menu">
+        <div class="sidefeatures">
+          <div class="featureheading">
+            <h1>Features</h1>
+            <img src="./images/icon-arrow-down.svg" alt="">
+          </div>
+          <div class="featurelist hide">
+            <li class="feature">
+              <img src="./images/icon-todo.svg" alt="icon-todo">
+              Todo List
+            </li>
+            <li class="feature">
+              <img src="./images/icon-calendar.svg" alt="calender">
+              Calender
+            </li>
+            <li class="feature">
+              <img src="./images/icon-reminders.svg" alt="reminder">
+              Reminder
+            </li>
+            <li class="feature">
+              <img src="./images/icon-planning.svg" alt="planning">
+              Planning
+            </li>
+          </div>
+        </div>
+
+
+        <div class="sidecompany">
+          <div class="companyheading">
+            <h1>Company</h1> <img src="./images/icon-arrow-down.svg" alt="">
+          </div>
+          <div class="companylist hide">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </div>
+        </div>
+
+        <div class="sidecareers">
+          <h1>Career</h1>
+        </div>
+
+        <div class="sideabout">
+          <h1>About</h1>
+        </div>
+      </div>
+      <div class="navright">
+        <div class="sidebuttons">
+          <button class="sidelogin">Login</button>
+          <button class="sideregister">Register</button>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -26,8 +79,8 @@
 
     <div class="sidefeatures">
       <div class="featureheading">
-      <h1>Features</h1>
-      <img src="./images/icon-arrow-down.svg" alt="">
+        <h1>Features</h1>
+        <img src="./images/icon-arrow-down.svg" alt="">
       </div>
       <div class="featurelist hide">
         <li class="feature">
@@ -51,7 +104,9 @@
 
 
     <div class="sidecompany">
-     <div class="companyheading"> <h1>Company</h1> <img src="./images/icon-arrow-down.svg" alt=""></div>
+      <div class="companyheading">
+        <h1>Company</h1> <img src="./images/icon-arrow-down.svg" alt="">
+      </div>
       <div class="companylist hide">
         <li>History</li>
         <li>Our Team</li>
@@ -76,24 +131,29 @@
   <main class="container">
     <div class="hero-img">
       <img src="./images/image-hero-mobile.png" alt="hero-img" class="heroimg">
+      <img src="./images/image-hero-desktop.png" alt="hero-img" class="desktophero-img">
     </div>
+    <div class="left">
     <div class="herocontent">
-      <h1 class="hero-heading">Make Remote Work</h1>
+      <h1 class="hero-heading"> <span> Make </span> Remote Work</h1>
       <p class="hero-brief">Get your team in sync, no matter your location. Streamline processes,create team rituals,and
         watch producticity soar.</p>
 
-
+      <div class="learnbtn">
       <button class="learnmorebtn">Learn More</button>
+      </div>
     </div>
-  </main>
-  <footer class="brands">
     <div class="brandlist">
       <img src="./images/client-databiz.svg" alt="databiz">
       <img src="./images/client-audiophile.svg" alt="audiophile" class="audiophile">
       <img src="./images/client-meet.svg" alt="meet">
       <img src="./images/client-maker.svg" alt="maker">
     </div>
-  </footer>
+    </div>
+  </main>
+  
+   
+ 
 </body>
 <script src="./script.js"></script>
 

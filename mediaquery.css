@@ -1,0 +1,91 @@
+@media(min-width:880px){
+    .menu{
+        display: none;
+    }
+    .nav{
+        align-items: center;
+    }
+    .navleft{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5em;
+    }
+   .featureheading,.companyheading{
+       display: flex;
+       align-items: center;
+       gap: 0.5em;
+   }
+    .sidebuttons{
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .logo{
+        margin-right: 1.2em;
+    }
+    .heroimg{
+        display: none;
+    }
+    
+    .desktophero-img{
+        width: 80%;
+        
+    }
+    .container{
+        padding: 1em;
+        padding-left: 2.5em;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 1440px;
+        margin: auto;
+        gap: 2em;
+    }
+    .herocontent{
+        text-align: left;
+        justify-content: left;
+    }
+    .hero-heading{
+        font-size: 4.5em;
+        /* align-self: left; */
+
+    }
+    .hero-heading span{
+        display: block;
+    }
+    .left{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .learnmorebtn{
+        display: block;
+        width: fit-content;
+        position: relative;
+        left:0;
+    }
+    .learnbtn{
+        width: 100%;
+        text-align: left;
+        
+    }
+}
+@media(max-width:1080px){
+    .desktophero-img{
+        width: 90%;
+    }
+}
+@media (max-width:880px) {
+    .navleft{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .desktophero-img{
+        display: none;
+    }
+    nav .sidefeatures,nav .sidecompany,nav .sidecareers,nav .sideabout{
+        display: none;
+    }
+    .navright{display: none;}
+}
