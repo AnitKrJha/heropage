@@ -10,10 +10,69 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center  ;
     padding: 10px 10px;
     margin-bottom: 10px;
+    gap: 2em;
 }
+.linkcontainer h1{
+    font-size: 1em;
+    color: rgb(105, 105, 105);
+}
+.linkcontainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.leftlinks{
+    padding-top: 5px;
+    display: flex;
+    align-items: baseline;
+    gap:2em;
+}
+.leftlinks a, aside a{
+    text-decoration: inherit;
+    color: inherit;
 
+}
+.rightbuttons{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+.featurelink{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    
+}
+.companylink{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.featurelink :hover ,.companylink :hover,.aboutlink :hover,.careerlink :hover{
+    color:black;
+    cursor: pointer;
+}
+#login{
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(105, 105, 105);
+    background-color: white;
+    border: none;
+}
+#register{
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(105, 105, 105);
+    background-color: white;
+    padding: 0.8em 1.2em;
+    border-radius: 20px;
+    border:2px solid rgb(105, 105, 105)
+
+}
+    
 .featureheading,
 .companyheading {
     display: inline;
@@ -58,6 +117,7 @@
     margin-top: 1em;
     margin-left: 1em;
     padding-left: 10%;
+   
     /* display: none; */
 }
 
@@ -75,6 +135,7 @@
     margin-left: 1em;
     margin-top: 1em;
     padding-left: 10%;
+    color: rgb(105, 105, 105);
     /* display: none; */
 }
 
@@ -162,6 +223,7 @@
     margin-top: 2em;
     margin-bottom: 2em;
     gap: 1.5em;
+    /* max-width: 1000px; */
 
 }
 
@@ -211,6 +273,8 @@
 .left{
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
+    height: 500px;
 }
 .learnmorebtn:hover {
     background-color: white;

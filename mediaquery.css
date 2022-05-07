@@ -2,24 +2,16 @@
     .menu{
         display: none;
     }
+   
     .nav{
-        align-items: center;
-    }
-    .navleft{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.5em;
+        padding:2em
     }
    .featureheading,.companyheading{
        display: flex;
        align-items: center;
        gap: 0.5em;
    }
-    .sidebuttons{
-        flex-direction: row;
-        margin-top: 0;
-    }
+  
     .logo{
         margin-right: 1.2em;
     }
@@ -40,9 +32,18 @@
         margin: auto;
         gap: 2em;
     }
+    
     .herocontent{
         text-align: left;
         justify-content: left;
+        gap:3em;
+        padding-left: 3em;
+        
+    }
+    .hero-brief{
+        font-size: 1.2em;
+        width: 80%;
+        align-self: flex-start; 
     }
     .hero-heading{
         font-size: 4.5em;
@@ -55,6 +56,7 @@
     .left{
         height: 100%;
         justify-content: space-between;
+        width: fit-content;
     }
     .learnmorebtn{
         display: block;
@@ -67,25 +69,44 @@
         text-align: left;
         
     }
+    .brandlist{
+       max-width: 600px;
+       padding-left: 3em;
+    }
+    .brandlist img{
+        width: clamp(20%,7em,15%);
+    }
+    .sidemenu{
+        display: none;
+    }
 }
-@media(max-width:1080px){
+@media(max-width:1120px){
     .desktophero-img{
         width: 90%;
     }
+    .container{
+        gap: 0;
+    }
+    .herocontent{
+        padding-left: 0.5em;
+    }
+    .brandlist{
+        display: none;
+    }
 }
 @media (max-width:880px) {
-    .navleft{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        
+    
+    .linkcontainer{
+        display: none;
     }
     .desktophero-img{
         display: none;
     }
-    nav .sidefeatures,nav .sidecompany,nav .sidecareers,nav .sideabout{
-        display: none;
+    
+   
+}
+@media(min-width:600px) and (max-width:880px)  {
+    .hero-heading{
+        font-size: 2.8em;
     }
-    .navright{display: none;}
 }

@@ -7,20 +7,17 @@ const featureheading = document.querySelector('aside .featureheading');
 const companyheading = document.querySelector('aside .companyheading');
 
 
-const navfeatureList = document.querySelector('nav .featurelist');
-const navcompanyList = document.querySelector('nav .companylist');
-const navfeatureheading = document.querySelector('nav .featureheading');
-const navcompanyheading = document.querySelector('nav .companyheading');
 
 
 
-var companyup = false;
-var featureup = false;
+
+let companyup = false;
+let featureup = false;
 
 menu.addEventListener('click', (e) => {
     sidemenu.classList.toggle('hide');
     sidemenu.style.boxShadow = '0 0 0 10000px rgba(0,0,0,0.75)';
-    
+
 });
 console.dir(companyheading);
 featureheading.addEventListener('click', (e) => {
@@ -33,7 +30,7 @@ featureheading.addEventListener('click', (e) => {
 });
 companyheading.addEventListener('click', (e) => {
     companyList.classList.toggle('hide');
-   
+
     companyup = !companyup;
     if (companyup)
         companyheading.lastElementChild.src = "./images/icon-arrow-up.svg";
@@ -51,14 +48,5 @@ closesidemenu.addEventListener('click', (e) => {
     companyList.classList.add('hide');
 
 });
-
-// navfeatureheading.addEventListener('mouseover',(e)=>{
-//     console.log('hovers');
-//     navfeatureList.classList.toggle('hide');
-// })
-// navcompanyheading.addEventListener('mouseover',(e)=>{
-//     console.log('hovers');
-//     navcompanyList.classList.toggle('hide');
-// })
 
 
