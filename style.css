@@ -1,90 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap");
+body {
+	background-color: hsl(0, 0%, 98%);
+}
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Epilogue', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Epilogue", sans-serif;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center  ;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    gap: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	gap: 2em;
 }
-.linkcontainer h1{
-    font-size: 1em;
-    color: rgb(105, 105, 105);
+.linkcontainer h1 {
+	font-size: 1em;
+	color: rgb(105, 105, 105);
 }
-.linkcontainer{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+.linkcontainer {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
-.leftlinks{
-    padding-top: 5px;
-    display: flex;
-    align-items: baseline;
-    gap:2em;
+.leftlinks {
+	padding-top: 5px;
+	display: flex;
+	align-items: baseline;
+	gap: 2em;
 }
-.leftlinks a, aside a{
-    text-decoration: inherit;
-    color: inherit;
+.leftlinks a,
+aside a {
+	text-decoration: inherit;
+	color: inherit;
+}
+.rightbuttons {
+	display: flex;
+	gap: 2em;
+	align-items: center;
+}
+.featurelink {
+	display: flex;
+	align-items: center;
+	position: relative;
+	gap: 0.5em;
+	padding-bottom: 1.5em;
+}
+.feature-dropdown,
+.company-dropdown {
+	position: absolute;
+	top: calc(100%);
+	right: 0px;
+	padding: 0.5em 0;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.224);
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-20px);
+	transition: transform 0.3s ease-in-out,opacity 0.3s ease-in-out;
 
 }
-.rightbuttons{
-    display: flex;
-    gap: 2em;
-    align-items: center;
+.company-dropdown {
+	left: 0px;
+	width: max-content;
 }
-.featurelink{
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    
-}
-.companylink{
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
-.featurelink :hover ,.companylink :hover,.aboutlink :hover,.careerlink :hover{
-    color:black;
-    cursor: pointer;
-}
-#login{
-    font-size: 1em;
-    font-weight: 700;
-    color: rgb(105, 105, 105);
-    background-color: white;
-    border: none;
-}
-#register{
-    font-size: 1em;
-    font-weight: 700;
-    color: rgb(105, 105, 105);
-    background-color: white;
-    padding: 0.8em 1.2em;
-    border-radius: 20px;
-    border:2px solid rgb(105, 105, 105)
 
+.feature-dropdown li,
+.company-dropdown li {
+	display: flex;
+	width: 100%;
+	gap: 1em;
+	padding: 0.7em 1.5em;
+	margin-bottom: 0.1em;
+	font-size: 0.9em;
+	font-weight: 500;
+	color: rgb(105, 105, 105);
+	/* background-color: pink; */
 }
-    
+.companylink {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	position: relative;
+	padding-bottom: 1.2em;
+}
+
+.featurelink:hover .feature-dropdown{
+	opacity: 1;
+	pointer-events:all;
+	transform: translateY(0px);
+	
+}
+.companylink:hover .company-dropdown{
+	opacity: 1;
+	pointer-events:all;
+	transform: translateY(0px);
+}
+.featurelink :hover,
+.companylink :hover,
+.aboutlink :hover,
+.careerlink :hover {
+	color: black;
+	cursor: pointer;
+}
+.login {
+	font-size: 1em;
+	font-weight: 700;
+	color: rgb(105, 105, 105);
+	background-color: hsl(0, 0%, 98%);
+	border: none;
+}
+.register {
+	font-size: 1em;
+	font-weight: 700;
+	color: rgb(105, 105, 105);
+	background-color: hsl(0, 0%, 98%);
+	padding: 0.8em 1.2em;
+	border-radius: 20px;
+	border: 2px solid rgb(105, 105, 105);
+}
+.login:hover {
+	cursor: pointer;
+	color: black;
+}
+.register:hover {
+	color: black;
+	border-color: black;
+	cursor: pointer;
+}
+
 .featureheading,
 .companyheading {
-    display: inline;
+	display: inline;
 }
 
 .featureheading :hover,
 .companyheading :hover,
 .sidecareers :hover,
 .sideabout :hover {
-
-    color: black;
-    transition: color 0.3s ease-out;
+	color: black;
+	transition: color 0.3s ease-out;
 }
 
 .menu,
@@ -95,194 +154,182 @@
 .companyheading,
 .sidecareers,
 .sideabout {
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
 }
 
 .sidemenu {
-    width: min(350px, 60%);
-    background-color: white;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    display: flex;
+	width: min(350px, 60%);
+	background-color: hsl(0, 0%, 98%);
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: flex;
 
-    flex-direction: column;
-
+	flex-direction: column;
 }
 
 .featurelist {
-    width: 80%;
-    margin-top: 1em;
-    margin-left: 1em;
-    padding-left: 10%;
-   
-    /* display: none; */
+	width: 80%;
+	margin-top: 1em;
+	margin-left: 1em;
+	padding-left: 10%;
+
+	/* display: none; */
 }
 
 .feature {
-    display: flex;
+	display: flex;
 
-    gap: 1em;
-    padding: 8px;
-    font-weight: 500;
-    color: rgb(105, 105, 105);
-
+	gap: 1em;
+	padding: 8px;
+	font-weight: 500;
+	color: rgb(105, 105, 105);
 }
 
 .companylist {
-    margin-left: 1em;
-    margin-top: 1em;
-    padding-left: 10%;
-    color: rgb(105, 105, 105);
-    /* display: none; */
+	margin-left: 1em;
+	margin-top: 1em;
+	padding-left: 10%;
+	color: rgb(105, 105, 105);
+	/* display: none; */
 }
 
-.companylist>li {
-    display: flex;
-    padding: 8px;
-    font-weight: 500;
-    color: rgb(105, 105, 105);
-
+.companylist > li {
+	display: flex;
+	padding: 8px;
+	font-weight: 500;
+	color: rgb(105, 105, 105);
 }
 
 .cross {
-    width: 100%;
-    text-align: right;
-    padding: 18px 15px;
+	width: 100%;
+	text-align: right;
+	padding: 18px 15px;
 }
 
 .sidefeatures,
 .sidecompany,
 .sidecareers,
 .sideabout {
-    width: 100%;
-    padding: 15px 15px;
-
-
+	width: 100%;
+	padding: 15px 15px;
 }
 
 .sidefeatures h1,
 .sidecompany h1,
 .sidecareers h1,
 .sideabout h1 {
-    font-size: 1.1em;
-    display: inline;
-    color: rgb(105, 105, 105);
+	font-size: 1.1em;
+	display: inline;
+	color: rgb(105, 105, 105);
 }
 
 .sidebuttons {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.3em;
-
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.3em;
 }
 
 .sidelogin,
 .sideregister {
-    padding: 0.5em;
-    font-size: 1em;
-    background: none;
-    border: 2px solid rgb(105, 105, 105);
-    font-weight: 700;
-    color: rgb(105, 105, 105);
+	padding: 0.5em;
+	font-size: 1em;
+	background: none;
+	border: 2px solid rgb(105, 105, 105);
+	font-weight: 700;
+	color: rgb(105, 105, 105);
 }
 
 .sidelogin {
-    border: none;
+	border: none;
 }
 
 .sideregister {
-    width: 80%;
-    padding: 0.8em;
-    border-radius: 20px;
+	width: 80%;
+	padding: 0.8em;
+	border-radius: 20px;
 }
 
 .container {
-
-    display: flex;
-    flex-direction: column;
-    /* display: none; */
-
+	display: flex;
+	flex-direction: column;
+	/* display: none; */
 }
-.hero-img{
-    text-align: center;
+.hero-img {
+	text-align: center;
 }
 .heroimg {
-    width: 100%;
+	width: 100%;
 }
 
 .herocontent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    gap: 1.5em;
-    /* max-width: 1000px; */
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	gap: 1.5em;
+	/* max-width: 1000px; */
 }
 
 .hero-heading {
-
-    font-size: 2.2em;
-    font-weight: 700;
-    width: 100%;
-
+	font-size: 2.2em;
+	font-weight: 700;
+	width: 100%;
 }
 
 .hero-brief {
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 25px;
-    color: rgb(105, 105, 105);
-    padding: 1px 5px;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 25px;
+	color: rgb(105, 105, 105);
+	padding: 1px 5px;
 }
 
 .learnmorebtn {
-    background-color: black;
-    color: white;
-    border: solid 2px black;
-    padding: 13px 25px;
-    border-radius: 15px;
-    font-size: 1em;
-    width: fit-content;
-    font-weight: 700;
+	background-color: black;
+	color: hsl(0, 0%, 98%);
+	border: solid 2px black;
+	padding: 13px 25px;
+	border-radius: 15px;
+	font-size: 1em;
+	width: fit-content;
+	font-weight: 700;
 }
 
-.brandlist>img {
-    width: 21%;
+.brandlist > img {
+	width: 21%;
 }
 
 .audiophile {
-    max-width: 15%;
+	max-width: 15%;
 }
 
 .brandlist {
-
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* display: none; */
+	padding: 10px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* display: none; */
 }
-.left{
-    display: flex;
-    flex-direction: column;
-    /* width: 100%; */
-    height: 500px;
+.left {
+	display: flex;
+	flex-direction: column;
+	/* width: 100%; */
+	height: 500px;
 }
 .learnmorebtn:hover {
-    background-color: white;
-    color: black;
-    transition: background-color 0.2s ease-out;
-    cursor: pointer;
+	background-color: hsl(0, 0%, 98%);
+	color: black;
+	transition: background-color 0.2s ease-out;
+	cursor: pointer;
 }
 
 .hide {
-    display: none !important;
+	display: none !important;
 }
