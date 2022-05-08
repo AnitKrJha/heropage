@@ -5,22 +5,23 @@ const featureList = document.querySelector("aside .featurelist");
 const companyList = document.querySelector("aside .companylist");
 const featureheading = document.querySelector("aside .featureheading");
 const companyheading = document.querySelector("aside .companyheading");
-const featurelink=document.querySelector('.featurelink');
-const companylink=document.querySelector('.companylink');
+const featurelink = document.querySelector(".featurelink");
+const companylink = document.querySelector(".companylink");
 
 let companyup = false;
 let featureup = false;
-featurelink.addEventListener('mouseover',(e)=>{
-	featurelink.children[1].src="./images/icon-arrow-up.svg";
+featurelink.addEventListener("mouseover", (e) => {
+	featurelink.children[1].src = "./images/icon-arrow-up.svg";
 });
-featurelink.addEventListener('mouseout',(e)=>{
-	featurelink.children[1].src="./images/icon-arrow-down.svg";
+featurelink.addEventListener("mouseout", (e) => {
+	featurelink.children[1].src = "./images/icon-arrow-down.svg";
 });
-companylink.addEventListener('mouseover',(e)=>{
-	companylink.children[1].src="./images/icon-arrow-up.svg";
+
+companylink.addEventListener("mouseover", (e) => {
+	companylink.children[1].src = "./images/icon-arrow-up.svg";
 });
-companylink.addEventListener('mouseout',(e)=>{
-	companylink.children[1].src="./images/icon-arrow-down.svg";
+companylink.addEventListener("mouseout", (e) => {
+	companylink.children[1].src = "./images/icon-arrow-down.svg";
 });
 menu.addEventListener("click", (e) => {
 	sidemenu.classList.toggle("hide");
